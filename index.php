@@ -29,5 +29,9 @@ try {
 }
 catch(Exception $e) {
     // TODO afficher le message contenu dans $e.
-    echo "il y a une erreure ";
+    echo "il y a une erreure <br>";
+    echo $e->getCode()."<br>";
+    echo $e->getFile()."<br>";
+    echo $e->getMessage()."<br>";
+    echo $e->getLine()."<br>";
 }
